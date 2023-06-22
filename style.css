@@ -4,9 +4,17 @@
 :root{
     --backgorund-color: rgb(249, 250, 250);
     --font-color: #000000;
+    --resume-color: #2364AA;
+    --projects-color: #73BFB8;
+    --events-color:#FEC601;
+    --contact-color: #EA7317;
     
     --main-font: 'Work Sans', sans-serif;
     --secondary-font: 'Montserrat', sans-serif;
+
+    --title-font-size: 60px;
+    --main-font-size: 22px;
+    --sec-font-size: 16px;
 }
 
 html{
@@ -27,6 +35,10 @@ html{
     align-items: center;
 }
 
+.header__home span{
+    font-weight: bold;
+}
+
 .header__home__icon{
     width: 25px;
 }
@@ -42,6 +54,7 @@ html{
 .header__menu{
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
 .header__menu__links:first-child{
@@ -51,4 +64,97 @@ html{
 .header__menu__links{
     padding: 0 10px;
     border-left: 1px #000 solid;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.prelude{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.prelude__container {
+    display: flex;
+    gap: 20px;
+    max-width: 1180px;
+}
+
+.prelude__image{
+    border-radius: 300px;
+}
+
+.prelude__content{
+    color: var(--font-color);
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prelude__content__title{
+    font-size: 60px;
+    margin: 0% 0% 3% 0%;
+    padding-left: 20px;
+}
+
+.prelude__content__subtitle{
+    font-size: 22px;
+    margin: 0% 0% 2% 0%;
+    padding-left: 20px;
+}
+
+.prelude__content__text{
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    margin: 0% 0% 5% 0%;
+    padding-right: 225px;
+    padding-left: 20px;
+    line-height: 1.6em;
+    letter-spacing: normal;
+}
+
+.prelude__links{
+    display: flex;
+    gap: 20px;
+
+}
+
+.prelude__links__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 22px;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    transition: background 500ms;
+}
+
+.prelude__links__button:hover{
+    background-color: #fdfae6;
+}
+
+
+.prelude__links__button span {
+    height: fit-content;
+}
+
+.resume-color{
+    background-color: var(--resume-color);
+}
+
+.project-color{
+    background-color: var(--projects-color);
+}
+
+.events-color{
+    background-color: var(--events-color);
+}
+
+.contact-color{
+    background-color: var(--contact-color);
 }
