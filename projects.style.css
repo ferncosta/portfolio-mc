@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@600&display=swap');
+
+:root {
+    --main-font: 'Work Sans', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+
+    --title-font-size: 42px;
+    --main-font-size: 26px;
+    --sec-font-size: 16px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-font);
+}
+
+.projects__container {
+   
+    width: 65%;
+    
+}
+
+
+.projects__title {
+    font-size: var(--title-font-size);
+}
+
+.projects__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.projects__item {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+
+.projects__item__content {
+    width: 400px;
+    min-width: 400px;
+}
+
+.projects__item__title {
+    font-size: var(--main-font-size);
+    padding-top: 10%;
+}    
+
+
+.projects__item__text {
+    font-size: var(--sec-font-size);
+    font-family: var(--secondary-font);
+    
+}
